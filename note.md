@@ -14,6 +14,10 @@ Download and install Node.js from the official website: [Node.js](https://nodejs
 ```bash
 node -v
 ```
+### To run the node 
+```
+node <file.js>
+```
 ### To verify the Node package manager (npm) has been installed.
 ```bash
 npm -v
