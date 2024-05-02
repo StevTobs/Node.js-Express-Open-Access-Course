@@ -40,3 +40,6 @@ The global object has a lot of useful properties and methods, and it’s not com
 ### Regarding Node.js:
 - Require in the 'events' core module: `const events = require('events');`
 - In the REPL, a complete list of core modules can be accessed by typing the command: `require('module').builtinModules`
+- `console.log()` — to print messages to the terminal.
+- `console.assert()` — to print a message to the terminal if the value is falsy.
+- `console.table()` — to print out a table in the terminal from an object or array.
