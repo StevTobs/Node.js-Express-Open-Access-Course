@@ -16,6 +16,10 @@ Download and install Node.js from the official website: [Node.js](https://nodejs
 mkdir my_project
 cd my_project
 npm init -y
+```
 
+### To see the version
+```bash
+node -v
+```
 
-> code
