@@ -36,3 +36,7 @@ A REPL can be extremely useful for performing calculations, learning a language,
 - Check out an easier-to-read list of the properties on the global object : `Object.keys(global)`.
 - Exit: <ctrl + D>
 The global object has a lot of useful properties and methods, and it’s not common to add any to it.
+
+### Regarding Node.js:
+- Require in the 'events' core module: `const events = require('events');`
+- In the REPL, a complete list of core modules can be accessed by typing the command: `require('module').builtinModules`
