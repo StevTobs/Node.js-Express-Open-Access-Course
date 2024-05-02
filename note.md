@@ -19,7 +19,7 @@ npm init -y
 ```
 
 ### To see the version
-```bash
+```
 node -v
 ```
 
