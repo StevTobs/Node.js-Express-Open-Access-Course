@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "DEBUG=app nodemon app.js",
+    "debug": "DEBUG=* nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -12,6 +14,14 @@
     "chalk": "^4.0.0",
     "debug": "^4.3.4",
     "express": "^4.18.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1"
+  },
+  "nodemonConfig":{
+    "restartable":"rs",
+    "delay":2000,
+    "env": {
+      "PORT":3000
+    }
   }
 }
