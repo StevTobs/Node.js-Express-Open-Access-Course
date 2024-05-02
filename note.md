@@ -26,9 +26,6 @@ node
 ```
 A REPL can be extremely useful for performing calculations, learning a language, and developing code. 
 
-#### In the REPL
+### In the REPL console:
 
-- Access the global object.
-```
-console.log(global)
-```
+- Access the global object : `console.log(global)`
