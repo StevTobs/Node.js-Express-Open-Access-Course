@@ -28,4 +28,7 @@ A REPL can be extremely useful for performing calculations, learning a language,
 
 ### In the REPL console:
 
-- Access the global object : `console.log(global)`
+- Access the global object : `console.log(global)`.
+- Check out an easier-to-read list of the properties on the global object : `Object.keys(global)`.
+- Exit: <ctrl + D>
+The global object has a lot of useful properties and methods, and it’s not common to add any to it.
