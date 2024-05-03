@@ -31,8 +31,10 @@ node
 A REPL can be extremely useful for performing calculations, learning a language, and developing code. 
 
 ### In the REPL console:
-
+Node has a global process object with useful methods and information about the current process.
 - Access the global object : `console.log(global)`.
+- The `process.env` property is an object which stores and controls information about the environment in which the process is currently running. 
+- `process.memoryUsage()` returns information on the CPU demands of the current process.
 - Check out an easier-to-read list of the properties on the global object : `Object.keys(global)`.
 - Exit: <ctrl + D>
 The global object has a lot of useful properties and methods, and it’s not common to add any to it.
@@ -43,3 +45,12 @@ The global object has a lot of useful properties and methods, and it’s not com
 - `console.log()` — to print messages to the terminal.
 - `console.assert()` — to print a message to the terminal if the value is falsy.
 - `console.table()` — to print out a table in the terminal from an object or array.
+
+### With the `os` module saved to the os variable, you can call methods like:
+
+`os.type()` — to return the computer’s operating system.
+`os.arch()` — to return the operating system CPU architecture.
+`os.networkInterfaces()` — to return information about the network interfaces of the computer, such as IP and MAC address.
+`os.homedir()` — to return the current user’s home directory.
+`os.hostname()` — to return the hostname of the operating system.
+`os.uptime()` — to return the system uptime, in seconds.
