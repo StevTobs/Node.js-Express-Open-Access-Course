@@ -48,9 +48,22 @@ The global object has a lot of useful properties and methods, and it’s not com
 
 ### With the `os` module saved to the os variable, you can call methods like:
 
-`os.type()` — to return the computer’s operating system.
-`os.arch()` — to return the operating system CPU architecture.
-`os.networkInterfaces()` — to return information about the network interfaces of the computer, such as IP and MAC address.
-`os.homedir()` — to return the current user’s home directory.
-`os.hostname()` — to return the hostname of the operating system.
-`os.uptime()` — to return the system uptime, in seconds.
+- `os.type()` — to return the computer’s operating system.
+- `os.arch()` — to return the operating system CPU architecture.
+- `os.networkInterfaces()` — to return information about the network interfaces of the computer, such as IP and MAC address.
+- `os.homedir()` — to return the current user’s home directory.
+- `os.hostname()` — to return the hostname of the operating system.
+- `os.uptime()` — to return the system uptime, in seconds.
+
+### The Node.js `util` core module contains methods specifically designed for these purposes. 
+- `types`, which provides methods for runtime type checking in Node.
+For example
+```
+const util = require('util');
+
+const today = new Date();
+const earthDay = 'April 22, 2022';
+
+console.log(util.types.isDate(today));
+console.log(util.types.isDate(earthDay));
+```
