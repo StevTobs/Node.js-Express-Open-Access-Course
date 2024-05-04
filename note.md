@@ -68,3 +68,10 @@ console.log(util.types.isDate(today));
 console.log(util.types.isDate(earthDay));
 ```
 - Another important `util` method is `.promisify()`, which turns callback functions into promises. 
+
+
+
+### Callback Functions 
+
+In JavaScript, a callback function is a function that is passed into another function as an argument. This function can then be invoked during the execution of that higher order function (that it is an argument of).
+Since, in JavaScript, functions are objects, functions can be passed as arguments.
