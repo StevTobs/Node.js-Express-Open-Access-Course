@@ -69,9 +69,26 @@ console.log(util.types.isDate(earthDay));
 ```
 - Another important `util` method is `.promisify()`, which turns callback functions into promises. 
 
-
-
 ### Callback Functions 
 
 In JavaScript, a callback function is a function that is passed into another function as an argument. This function can then be invoked during the execution of that higher order function (that it is an argument of).
 Since, in JavaScript, functions are objects, functions can be passed as arguments.
+
+
+
+## Some important JavaScript concepts 
+### Arrow Expressions
+Arrow expressions has allowed developers to omit parts of the function they don’t need. When using an arrow expression, we do not use the `function` declaration. To define an arrow expression you simply use: `() => { }`. You can pass arguments to an arrow expression between the parenthesis (`()`).
+```
+// Defining an anonymous arrow expression that simply logs a string to the console.
+console.log(() => console.log('Shhh, Im anonymous'));
+
+// Defining a named function by creating an arrow expression and saving it to a const variable helloWorld. 
+const helloWorld = (name) => {
+  console.log(`Welcome ${name} to Codecademy, this is an arrow expression.`)
+};
+
+// Calling the helloWorld() function.
+helloWorld('Codey'); //Output: Welcome Codey to Codecademy, this is an Arrow Function Expression.
+
+```
