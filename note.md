@@ -58,7 +58,7 @@ The global object has a lot of useful properties and methods, and it’s not com
 ### The Node.js `util` core module contains methods specifically designed for these purposes. 
 - `types`, which provides methods for runtime type checking in Node./
 For example
-```
+```javascript
 const util = require('util');
 
 const today = new Date();
@@ -79,7 +79,7 @@ Since, in JavaScript, functions are objects, functions can be passed as argument
 ## Some important JavaScript concepts 
 ### Arrow Expressions
 Arrow expressions has allowed developers to omit parts of the function they don’t need. When using an arrow expression, we do not use the `function` declaration. To define an arrow expression you simply use: `() => { }`. You can pass arguments to an arrow expression between the parenthesis (`()`).
-```
+```javascript
 // Defining an anonymous arrow expression that simply logs a string to the console.
 console.log(() => console.log('Shhh, Im anonymous'));
 
