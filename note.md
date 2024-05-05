@@ -92,3 +92,12 @@ const helloWorld = (name) => {
 helloWorld('Codey'); //Output: Welcome Codey to Codecademy, this is an Arrow Function Expression.
 
 ```
+### Asynchronous Concepts
+When it comes to development in Node.js and JavaScript, we use a mix of synchronous code (blocking I/O), and asynchronous code (non-blocking I/O). A common example of asynchronous code are Promises.
+
+#### Promises
+A Promise is a JavaScript object that represents the eventual outcome of an asynchronous operation. A Promise has three different outcomes: 
+- `pending`(the result is undefined and the expression is waiting for a result)
+- `fulfilled` (the promise has been completed successfully and returned a value)
+- `rejected` (the promise did not successfully complete, the result is an error object)
+
